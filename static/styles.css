@@ -1,0 +1,51 @@
+body{
+   width:700px;
+   height:500px;
+}
+
+<style>
+h4 {
+    color: black;
+    font-family: arial;
+    font-size: 200%;
+    font-weight: bold;
+}
+h5 {
+    color: blue;
+    margin-top: 0.6em;
+    margin-bottom: 0.1em;
+    font-family: arial;
+    font-size: 150%;
+    font-weight: bold;
+}
+
+        table, th, td 
+        {
+            /*margin:10px 0;*/
+            border:solid 1px;
+            padding:2px 4px;
+            font:15px arial;
+        }
+        th {
+            font-weight:bold;
+        }
+    </style>
+
+
+main .form-control
+{
+    /* center form controls */
+    display: inline-block;
+
+    /* override Bootstrap's 100% width for form controls */
+    width: auto;
+}
+
+main img
+{
+    /* constrain images on small screens */
+    max-width: 100%;
+}
+
+
+
