@@ -11,7 +11,8 @@
    "default_popup": "popup.html"        // optional
    },
    "permissions": [
-    "https://api.darksky.net/*"
+    "https://api.darksky.net/*",
+    "https://fonts.googleapis.com/*"
 ],
   "background": {
     "scripts": ["static/jquery.js","static/moment.js","static/scripts.js"],

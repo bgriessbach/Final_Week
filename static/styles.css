@@ -1,6 +1,7 @@
 body{
-   width:700px;
+   width:600px;
    height:500px;
+    background: url(/Images/congruent_pentagon-1.jpg) repeat 0 0;
 }
 
 <style>
@@ -11,20 +12,36 @@ h4 {
     font-weight: bold;
 }
 h5 {
-    color: blue;
-    margin-top: 0.6em;
-    margin-bottom: 0.1em;
-    font-family: arial;
-    font-size: 150%;
-    font-weight: bold;
+    color:  #003300;
+    margin: 10px;
+    font-family: 'Acme', sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    padding-left: 0;
 }
+p{
+    font-family: 'Acme', sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    margin: 3px;
+    padding: 0;
 
-        table, th, td 
+}
+b{
+    font-weight: bold; 
+    color: #333300;
+}
+table, th, td 
         {
+            border-collapse: collapse;
+
             /*margin:10px 0;*/
-            border:solid 1px;
+            border:1px solid;
             padding:2px 4px;
-            font:15px arial;
+            font-size: 15px;
+            font-family: 'Arvo', serif;
+            color: #003312;
+
         }
         th {
             font-weight:bold;
@@ -32,20 +49,6 @@ h5 {
     </style>
 
 
-main .form-control
-{
-    /* center form controls */
-    display: inline-block;
-
-    /* override Bootstrap's 100% width for form controls */
-    width: auto;
-}
-
-main img
-{
-    /* constrain images on small screens */
-    max-width: 100%;
-}
 
 
 
