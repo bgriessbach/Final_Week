@@ -12,8 +12,8 @@ function createWeather (geo_location, APIKEY, p_ID, table_ID) {
     "https://api.darksky.net/forecast/"+APIKEY+"/"+geo_location+"?exclude=minutely,daily,alerts,flags&units=si",
     {},
     function(weather_data) {
-        createWeatherTable(weather_data, table_ID);
         createCurrentWeather(weather_data, p_ID);
+        createWeatherTable(weather_data, table_ID);
     }
     );
 }
@@ -49,6 +49,7 @@ function createWeatherTable(weather_data, table_ID){
         "<tr><td><b>Temperature</b></td>"+weather_temperature;
 
 }
+
 
 function timeconvert(unix_timestamp){
     var date = new Date(unix_timestamp*1000);
