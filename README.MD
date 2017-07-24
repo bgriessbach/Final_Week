@@ -1,7 +1,7 @@
 # Good_Morning Chrome Extension  
 
 ## Goal:
-Chrome Extension that shows current weather as well as forecasts and train times for my Home, Work and Charity. 
+Chrome Extension that shows current weather as well as forecasts for 3 locations that can be saved. 
 The info should display as a pop-up window when the Extension Icon is clicked.  
 
 ## Weather:
@@ -11,9 +11,10 @@ Currently, I am using darksky API for the weather information.
 + ~~converting time from unix timestamp~~ (Done!)
 + ~~make day forecast cleaner and easier to understand (table with times, rain possibility and temperature?)~~ (Done!)
 + made functions and variable names more concise
++ added input boxes for zip code
++ added "Save" Button
++ need to save input (locally or in browser) and build backend to pull location data
 
-## Trains:
-Currently not implemented yet. I want to show the times of the next leaving trains/busses from current location to stored locations. 
 
 ## Layout:
 + using Google Fonts
