@@ -2,7 +2,7 @@
   // Required
   "manifest_version": 2,
   "name": "Good Morning",
-  "version": "1.0.0.0",
+  "version": "1.0.0.1",
   "description": "Good start to the day",
   "icons": {"128": "Images/sun_16.png"},
     "browser_action": {
@@ -15,7 +15,7 @@
     "https://fonts.googleapis.com/*"
 ],
   "background": {
-    "scripts": ["static/jquery.js","static/moment.js","static/scripts.js"],
-    "persistent": true
+    "scripts": ["static/jquery.js","static/scripts.js"],
+    "persistent": false
   }
   }
