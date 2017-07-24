@@ -1,5 +1,19 @@
 var location_data=[["52.075,-0.7333", "Home", "Hour_Home"], ["51.5188,0.0814","Work", "Hour_Work"], ["51.612789,-0.017634", "Charity", "Hour_Charity"]];
 var APIKEY="5b4fe673c6e4ab2092645198014f0dff";
+var icons = new Skycons({"color": "orange"});
+
+icons.set("clear-day", Skycons.CLEAR_DAY);
+icons.set("clear-night", Skycons.CLEAR_NIGHT);
+icons.set("partly-cloudy-day", Skycons.PARTLY_CLOUDY_DAY);
+icons.set("partly-cloudy-night", Skycons.PARTLY_CLOUDY_NIGHT);
+icons.set("cloudy", Skycons.CLOUDY);
+icons.set("rain", Skycons.RAIN);
+icons.set("sleet", Skycons.SLEET);
+icons.set("snow", Skycons.SNOW);
+icons.set("wind", Skycons.WIND);
+icons.set("fog", Skycons.FOG);
+
+icons.play();
 
 for (var i=0; i<location_data.length; i++){
     createWeather(location_data[i][0], APIKEY, location_data[i][1], location_data[i][2]);
@@ -24,7 +38,7 @@ function createCurrentWeather(weather_data, p_ID){
     var timestamp=timeconvert(JSON.stringify(weather_data.currently.time));
     document.getElementById(p_ID).innerHTML =
     '<b>Time: </b>' +timestamp+"<br>" +
-    '<b>Summary: </b>' + '<span id='+p_ID+'summary></span>'+"<br>" +
+    '<b>Summary: </b>' + '<span id='+p_ID+'summary></span><br>' +
     '<b>Temperature: </b>'+ '<span id='+p_ID+'temperature></span>'+' \xB0'+'C'+"<br>"+hourly_summary;
     document.getElementById(p_ID+'summary').innerText=JSON.stringify(weather_data.currently.summary);
     document.getElementById(p_ID+'temperature').innerText= JSON.stringify(weather_data.currently.temperature);
